@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;    
+    box-sizing: border-box;
+}
+
+html{
+    
+    background-color: hsl(257, 40%, 49%);
+    margin: auto;
+    background-repeat: no-repeat;
+    background-image: url(./images/bg-desktop.svg);
+    background-size: cover;
+    overflow-x: hidden;
+}
+body{
+    height: 100vh;
+   
+    
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+header{
+    width: 70%;
+    margin: 5%;
+}
+.main{
+    display: flex;
+    margin: auto;
+    width: 90%;
+}
+.Text{
+    padding: 5%;
+    margin:auto auto auto 15px;
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+    font-size: 40px;
+    width: 500px;
+}
+
+p{
+    font-size: 16px;
+    margin-top: 3%;
+    color: hsl(0, 0%, 100%);
+    font-family:  'Open Sans', sans-serif;;
+    width: 460px;
+    
+}
+
+button{
+    height: 50px;
+    width: 170px;
+    border-radius: 25px;
+    border: none;
+    box-shadow: 0px 7px 22px -3px rgba(0, 0, 0, 0.359);
+    color: hsl(257, 40%, 49%);
+    margin-top: 5% ;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+button:hover{
+    background-color: hsl(300, 69%, 71%);
+    color: #fff;
+    cursor: pointer;
+}
+
+.social{
+    display: flex;
+    justify-content: flex-end;
+    width: 80%;
+    margin: auto;
+}
+
+.social a i{
+    color: #fff;
+    font-size: 18px;
+    position: relative;
+    
+}
+.social a i:hover{
+    color: hsl(300, 69%, 71%);
+    cursor: pointer;
+}
+
+.social a:not(:first-child) {
+    margin-left: 1.5rem;
+}
+
+.social a i::after {
+    content: '';
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    border: 2px solid white;
+    border-radius: 50%;
+    left: -13px;
+    top: -13px;
+}
+
+.social a i:hover::after{
+    border-color: hsl(300, 69%, 71%);
+}
+
+
+@media only screen and (max-width: 425px) {
+
+    html {
+        background-color: hsl(257, 40%, 49%);
+        margin: auto;
+        background-repeat: no-repeat;
+        background-image: url(./images/bg-mobile.svg);
+    }
+    .main{
+        flex-direction: column ;
+        margin: 0;
+        width: 100%;
+    }
+    h1{
+        font-size: 25px;
+        margin: auto;
+        width: 324px;
+        text-align: center;
+    }
+
+    .Text{
+       margin: 30px 0 50px 0;
+       text-align: center; 
+    }
+
+    p{
+        font-size: 1.1em;
+        width: 90%;
+        margin: auto;
+    }
+
+    .social{
+        margin: auto;
+        justify-content: center;
+    }
+
+    button{
+        width: 250px;
+        margin-top: 30px;
+    }
+
+    .social a i{
+        font-size: 15px;
+    }
+
+    .social a i::after {
+        height: 30px;
+        width: 30px;
+        left: -10px;
+        top: -10px;
+    }
+
+    .img-mockup{
+        position: relative;
+        margin: auto;
+        width: 320px;
+        height: 220px;
+        padding: 5px;
+    }
+    .img-logo{
+        height: 35px;
+        position: relative;
+        left: 20px;
+        margin-bottom: 30px;
+    }
+
+    .attribution{
+        text-align: center;
+        margin-top: 50px ;
+    }
+}
